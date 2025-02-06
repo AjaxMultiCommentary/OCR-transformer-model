@@ -4,7 +4,7 @@ Textline recognition model, implemented using PyTorch, specialised for the recog
 
 This custom model was trained with ~6.2M of articially generated lines, as well as 350k real-world lines. It reaches a character-level accuracy of 98.2% on lines containing mixed Latin and Greek alphabets (+8% improvement with respect to our [Tesseract baseline](https://github.com/tesseract-ocr/tessdata_contrib/tree/main/grc_hist)). 
 
-The model will be released in **early 2025**, together with data and documentation. 
+This model is only the core of a broader wrapper which allows it to ingest lines of any length. The modules are described [`ajmc_pipeline/ocr/pytorch`](https://github.com/AjaxMultiCommentary/ajmc-pipeline/tree/main/ajmc/ocr/pytorch) and a few example usages can be found in [`ajmc_pipeline/ocr/_scripts`](https://github.com/AjaxMultiCommentary/ajmc-pipeline/tree/main/ajmc/ocr/_scripts). A more user-friendly API will be released as soon as possible.  
 
 ## Acknowledgements
 
