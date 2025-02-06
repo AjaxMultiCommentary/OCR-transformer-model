@@ -1,0 +1,155 @@
+{
+  "cache_dir": null,
+  "chars_to_special_classes": {
+    "ª": "\u0002a",
+    "²": "\u00022",
+    "³": "\u00023",
+    "¹": "\u00021",
+    "ᵃ": "\u0002a",
+    "ᵅ": "\u0002a",
+    "ᵇ": "\u0002b",
+    "ᵈ": "\u0002d",
+    "ᵉ": "\u0002e",
+    "ᵍ": "\u0002g",
+    "ᵏ": "\u0002k",
+    "ᵐ": "\u0002m",
+    "ᵒ": "\u0002o",
+    "ᵖ": "\u0002p",
+    "ᵗ": "\u0002t",
+    "ᵘ": "\u0002u",
+    "ᵛ": "\u0002v",
+    "ᵝ": "\u0002b",
+    "ᵢ": "\u0003i",
+    "ᵣ": "\u0003r",
+    "ᵤ": "\u0003u",
+    "ᵥ": "\u0003v",
+    "ᶜ": "\u0002c",
+    "ᶠ": "\u0002f",
+    "⁰": "\u00020",
+    "ⁱ": "\u0002i",
+    "⁴": "\u00024",
+    "⁵": "\u00025",
+    "⁶": "\u00026",
+    "⁷": "\u00027",
+    "⁸": "\u00028",
+    "⁹": "\u00029",
+    "⁺": "\u0002+",
+    "⁻": "\u0002-",
+    "⁼": "\u0002=",
+    "⁽": "\u0002(",
+    "⁾": "\u0002)",
+    "ⁿ": "\u0002n",
+    "₀": "\u00030",
+    "₁": "\u00031",
+    "₂": "\u00032",
+    "₃": "\u00033",
+    "₄": "\u00034",
+    "₅": "\u00035",
+    "₆": "\u00036",
+    "₇": "\u00037",
+    "₈": "\u00038",
+    "₉": "\u00039",
+    "₊": "\u0003+",
+    "₋": "\u0003-",
+    "₌": "\u0003=",
+    "₍": "\u0003(",
+    "₎": "\u0003)",
+    "ₐ": "\u0003a",
+    "ₑ": "\u0003e",
+    "ₒ": "\u0003o",
+    "ₓ": "\u0003x",
+    "ₖ": "\u0003k",
+    "ₗ": "\u0003l",
+    "ₘ": "\u0003m",
+    "ₙ": "\u0003n",
+    "ₚ": "\u0003p",
+    "ₛ": "\u0003s",
+    "ₜ": "\u0003t",
+    "ⱼ": "\u0003j"
+  },
+  "chunk_height": 40,
+  "chunk_overlap": 20,
+  "chunk_width": 320,
+  "classes": "\u0000\u0001\u0002\u0003\u0004\u0005\u0006\u0007;·́̈΄ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρςστυφχψω`´̀̄̆̓̔͂ͅ᾽᾿῾˙̣̅ϚϛϜϝϞϟϠϡ‖ℵ⏑⏒⏓⏔⏕⏖⏗⏘⏙〈〉𝔐ACEGHIJKLMNOSTUYZaceghijklmnostuyz°Ʒʒ̧̨̱̂̃̌̕ !\"%&'()*+,-./0123456789:<=>?BDFPQRVWX[\\]^_bdfpqrvwx{|}~¡§«¯¶¸º»¿ÆÐßæð÷øŒœˇ˘̦̇̊̒ẞ–—‘’‚“”„•…‹›¦¬±¼½¾†‡¤ϲϹ∠♃𝒢𝔄𝔅𝔙𝔚𝔣𝔮ſℳ",
+  "config_name": "1A_withbackbone_new.json",
+  "decoder": {
+    "in_features": 40,
+    "out_features": 258
+  },
+  "densenetbackbone": {
+    "block_config": [
+      6,
+      12,
+      24,
+      16
+    ],
+    "bn_size": 4,
+    "drop_rate": 0,
+    "growth_rate": 32,
+    "memory_efficient": false,
+    "num_init_features": 64
+  },
+  "device": "cuda:0",
+  "encoder": {
+    "TransformerEncoder": {
+      "num_layers": 4
+    },
+    "TransformerEncoderLayer": {
+      "batch_first": true,
+      "d_model": 40,
+      "dim_feedforward": 256,
+      "dropout": 0.1,
+      "nhead": 4
+    }
+  },
+  "epochs": 30,
+  "learning_rate": 5e-06,
+  "load_from_path": "/home/najem/withbackbone_v2/last_model.pt",
+  "max_batch_size": 512,
+  "momentum": 0.9,
+  "num_classes": 258,
+  "num_workers": 1,
+  "output_dir": "/home/najem/withbackbone_v2",
+  "random_seed": 42,
+  "save_rate": 100,
+  "save_to_path": null,
+  "scheduler_gamma": 0.25,
+  "scheduler_patience": 4,
+  "special_classes": [
+    [
+      "blank",
+      "\u0000"
+    ],
+    [
+      "unknown",
+      "\u0001"
+    ],
+    [
+      "superscript",
+      "\u0002"
+    ],
+    [
+      "subscript",
+      "\u0003"
+    ],
+    [
+      "reserved_1",
+      "\u0004"
+    ],
+    [
+      "reserved_2",
+      "\u0005"
+    ],
+    [
+      "reserved_3",
+      "\u0006"
+    ],
+    [
+      "reserved_4",
+      "\u0007"
+    ]
+  ],
+  "train_data_dir": "/home/najem/batched_dataset_cached/train",
+  "val_data_dir": "/home/najem/batched_dataset_cached/val",
+  "validation_rate": 5000
+}
